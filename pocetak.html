@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room</title>
+    
+</head>
+<body style="background-color: #050505">
+   <style>
+   @media all and (display-mode: fullscreen) {
+    h1{
+        opacity: 0;
+    }
+  }
+  </style> 
+
+ 
+        <img src="./MainDoorC1.png" id="vrata" width="1920" height="1080"  usemap="#map-vrata"  />
+    
+    <map name="map-vrata">
+        <area id="otvor" shape="rect" coords="850,930,980,256" onmouseover="document.getElementById('vrata').src='MainDoorO1.png';" onmouseout="document.getElementById('vrata').src='MainDoorC1.png';" onclick="this.href='soba1.html';"/>
+        
+    </map>
+    <h1 style="color: white; text-align: center;">Uđite u fullscreen mode (F11) ili maksimizirajte prozor.</h1>
+</body>
+</html> 

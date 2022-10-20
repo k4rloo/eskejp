@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prva soba</title>
+</head>
+<body style="background-color: #050505">
+    <style>
+        h2{
+            display: none;
+        }
+    </style>
+    <img src="karte.jpg" title=" " id="soba1" width="1920" height="1080" style=" left: 10%;" width="80%" height="80%" usemap="#map-ladica"  />
+    
+    <map name="map-ladica">
+        <area shape="rect" coords="630,560,1300,900" onmouseover="document.getElementById('soba1').src='karteExit.jpg';" onmouseout="document.getElementById('soba1').src='karte.jpg';" onclick="this.href='pocetak.html'"/>
+        <area shape="rect" coords="830,500,1100,300" onclick="document.getElementById('tekst').style.display='block'"/>
+        <h2 id="tekst" style="position: absolute; top: 400px; left: 1000px; z-index: 2; color: red;" >ne klikaj čarobnjaka</h2>
+        <h2 style="position: absolute; top: 25px; left: 750px; z-index: 2; color: white; display: block; text-align: center;" >Ponuđene su ti 3 karte. Pogodiš li točnu, <br>
+        oslobođen si tamnice.</h2>
+    </map>
+</body>
+</html>
